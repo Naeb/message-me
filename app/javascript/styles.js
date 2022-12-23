@@ -1,4 +1,4 @@
-$(document).ready(function () {
+$(document).on ('turbo:load', function () {
     $('.ui.menu .ui.dropdown').dropdown({
         on: 'hover'
     });
@@ -8,5 +8,11 @@ $(document).ready(function () {
                 .addClass('active')
                 .siblings()
                 .removeClass('active');
+        });
+        $('.message .close')
+        .on('click', function() {
+          $(this)
+            .closest('.message')
+            .transition('fade');
         });
 });

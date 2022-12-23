@@ -2,8 +2,5 @@
 import "@hotwired/turbo-rails"
 import "controllers"
 import "jquery"
-import "semantic-ui"
 import "styles"
-
-import { Turbo } from "@hotwired/turbo-rails"
-Turbo.session.drive = false
+import "semantic-ui"
