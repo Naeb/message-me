@@ -8,3 +8,5 @@ pin "jquery", to: "jquery.min.js", preload: true
 pin "styles", to: "styles.js", preload: true
 pin "semantic-ui", to: "semantic-ui.js", preload: true
 pin_all_from "app/javascript/controllers", under: "controllers"
+pin "@rails/actioncable", to: "actioncable.esm.js"
+pin_all_from "app/javascript/channels", under: "channels"
